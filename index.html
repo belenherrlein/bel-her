@@ -1,5 +1,5 @@
     <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +11,22 @@
 </head>
 <body>
     <header>
-        <img src="./Imagenes/logo.svg" alt="bd" height="30px" width="30px">
+        <img src="/Imagenes/logo.svg" alt="bd" height="30px" width="30px">
     </header>
-    <div class="nav">
-        <label for="toggle">&#9776;</label>
+    <nav class="container">
         <input type="checkbox" id= "toggle"/>
-        <div class= "menu">
-            <a href="#">Episodios</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Entrevistas</a>
-            <a href="#">Nosotros</a>
+        <div class="cierre">
+            <i class="far fa-times-circle"></i>
         </div>
-    </div>
-    
+        <label> 
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="barra">
+            <li><a href="#">Episodios</a></li> 
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Entrevistas</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+        </nav> 
 </body>
 </html>
