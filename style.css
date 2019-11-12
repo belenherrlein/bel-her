@@ -1,50 +1,256 @@
+
 *{
    margin: 0;
    padding: 0;
 }
-body{
+
+body {
+   overflow-x: hidden;
    font-family: 'IBM Plex Sans', sans-serif;
-   font-size: 1rem
+   font-size: 1rem;
+   background-color: rgb(250, 237, 184);
+   width: 100%;
+   height: 100%;
 }
+
 header {
    position: fixed;
-   top: 8%;
+   top: 2.7%;
    left: 6%;
+   z-index: 1;
 }
+/* menu */
+
 .container {
+   background: rgba(253, 253, 253, 0.959);
    margin: 0;
    display: flex;
    justify-content: flex-end;
    position: fixed;
-   top: 7%;
-   right: 3%;
-   width: 1220px;
+   top: 0;
+   height: 10%;
+   width: 100%;
    line-height: 60px;
-  }
+}
+
 .cierre, label, #toggle {
    display: none;
 }
+
 .barra {
+   padding: 0.2%;
+   right: 2%;
    display: flex;
+   position: fixed;
    flex-direction: row;
-      }
+}
+
 .barra li {
-   margin: 0 70px 0 0;
+   margin: 0 5px 0 0;
    list-style: none;
    width: 120px;
-   height: 50px;
+   height: 30px;
    text-align: center;
+   align-items: center;
 }
+
 .barra li a {
-   
    display: block;
    text-decoration: none;
    font-family: 'IBM Plex Mono', monospace;
-   font-weight: bold;
-   color: rgb(56, 54, 54);
-   }
+   font-weight: bolder;
+   color: rgb(109, 110, 110);
+}
+
 .barra li a:hover {
+   transition: 1s;
    box-sizing: content-box;
-   width: 100%;
-  color: rgba(0, 128, 75, 0.815);
+   color: rgba(247, 54, 47, 0.87);
+}
+
+/* fondo */
+.corte {
+   z-index: -1;
+   position: absolute;
+   top: 60%;
+   padding: 10%;
+   width: 25rem;
+   height: 6rem;
+   border-top: 35rem solid transparent;
+   border-bottom:45rem solid transparent;
+   border-left: 85rem solid rgba(136,216,176);
+ }
+/* Primer sección */
+.first {
+   margin: 10rem;
+}
+
+h1 {
+   margin:0;
+   font-size: 3rem;
+   color:  rgb(82, 79, 79);
+}
+p {
+   font-size: 1.2rem;
+   color:  rgb(82, 79, 79);
+}
+
+.ctafirst {
+   width: 10rem;
+   height: 3rem;
+   margin: 4rem 0 0 0;  
+   background-color: rgb(255,111,105);
+   cursor: pointer
+}
+.cta {
+   margin: 20%;
+   display: flex;
+   Flex-direction: column-reverse;
+   align-items:center;
+   color: rgb(68, 68, 66);
+   font-family:'IBM Plex Mono', monospace;
+   font-weight: bolder;
+   text-align: center;
+   line-height: 3rem;
+}
+.ctafirst:hover {
+   background-image: linear-gradient(297deg, #85FFBD 0%, #FFFB7D 100%);
+   transition: 2s;
+}
+
+/* segunda sección episodios*/
+#episodios {
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 3%;
+   margin-left: 6%;
+   z-index: -2;
+}
+.second {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+
+
+/* tercera sección nosotros */
+#nosotros {
+   z-index: unset;
+   margin: 8rem;
+   width: 80%;
+   height: 80%;
+}
+ #nosotros p {
+   margin: 0;
+   width: 22rem;
+   z-index: -1;
+   display: flex;
+   position: relative;
+   transform: translate(33vw,-82vh);
+   color: rgb(82, 79, 79); 
+}
+
+
+#nosotros h2 {
+   width: 25rem;
+   height: 5rem;
+   font-weight: bolder;
+   font-size: 2.5rem;
+   z-index: -1;
+   display: flex;
+   position: relative;
+   transform: translate(33vw,-82vh);  
+   color: rgb(54, 52, 52);
+   }
+
+/* cuarta etapa imagenes */
+
+.invitadas {
+   margin: 0;
+   z-index: -1;
+   display: block;
+   position: relative;
+   transform: translate(-0.2vw,30vh)
+}
+figcaption {
+   width: 35rem;
+   height: 5rem;
+   font-weight: bolder;
+   font-size: 2.5rem;
+   z-index: -1;
+   position: relative;
+   transform: translate(10.5vw,2vh);  
+   color: rgb(54, 52, 52);
+   }
+/* Seccion alguno de nuestros temas */
+
+
+
+@media only screen and (max-width: 700px) {
+
+   label {
+      font-size: 4vh;
+      display: block;
+      position: fixed;
+      top: 5vh;
+      right: 10vh;
+      cursor: pointer;
+   }
+
+   #toggle{
+      display: none;
+      align-items: flex-end ;
+      position: relative;
+      
+   }
+
+   header {
+      position: fixed;
+      top: 7.5vh;
+      left: 5vh
+   }
+
+   .barra {
+      width: 100%;
+      display: block;
+      text-align: center;
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+   .container{
+      width: 6vw;
+      height: 0;
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      align-items: center;
+      right: -45%;
+      width: 100%;
+      top: 4vh;
+      color: 100%;
+   }
+   .barra li {
+      display: none;
+      flex-direction: column;
+      margin: 4%;
+      }
+   .barra li a {
+      text-align: center;
+      font-size: 20px;
+      display: block;
+      justify-content: center;
+      align-items: stretch;
+   } 
+   label:hover {
+      display: none;
+   }
+   #toggle:checked + .barra li a {
+      display: block;
+   }
+
+/* menu */
+
+
    }
