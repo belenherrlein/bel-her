@@ -20,7 +20,9 @@ header {
    top: 2.7%;
    width: 100%;
    z-index: 2;
+   cursor: pointer;
 }
+
 .bd {
    position: fixed;
    top: 2.7%;
@@ -152,7 +154,7 @@ p {
 
 /* tercera sección nosotros */
 #nosotros {
-   margin:13rem;
+   margin:15%;
    width: 80%;
 }
  #nosotros p {
@@ -175,6 +177,9 @@ p {
    color: rgb(75, 73, 73);
    }
 
+   .nosotros a{
+      cursor: pointer;
+   }
 /* cuarta etapa imagenes */
 
 #entrevistas {
@@ -199,7 +204,7 @@ figcaption {
 .topicos {
    margin: 8rem;
    display: block;
-   transform: translateY(-15rem);
+   transform: translateY(-42vh);
 }
 .topicos h2 {
    width: 100%;
@@ -216,17 +221,29 @@ figcaption {
    list-style: none;
    display: flex;
    justify-content: center;
-   transform: translate(2rem,6rem);
+   transform: translate(2vw,12vh);
 }
 .topicos ul li {
    padding-right: 5rem;
-   padding-left: 2rem;
+   padding-left: 2.5rem;
    height: 60%;
+   cursor: pointer;
+}
+
+.topicos ul li a {
+   text-decoration: none;
+   color:rgb(75, 73, 73) ;
+   text-align: center;
+   font-weight: bold;
 }
 
 .iconi {
    display: block;
-   padding-top: 5%;
+   align-items: center;
+   text-decoration: none;
+   font-style: normal;
+   padding-top: 5vh;
+   padding-right: 1vw;
 }
 
 /* ultimas novedades */
@@ -236,7 +253,7 @@ figcaption {
    width: 100%;
    height: 60%;
    position: relative;
-   transform: translate(5rem,-15rem);
+   transform: translate(7.5vw,-55vh);
 }
 
 .last h2 {
@@ -251,30 +268,30 @@ figcaption {
 }
 .last a {
   position: absolute;
-  margin: 6% 0 0 30%;
-
-   /* transform: translate () */
+  margin: 6% 0 0 26%;
  }
 
 footer {
-   height: 60%;
+   height: 10%;
    display: block;
    padding: 1.8%;
-   background: rgba(247, 54, 47, 0.87);
+   background: rgba(218, 71, 66, 0.726);
 }
 .footer {
-   padding-left: 3%;
+   padding-left: 3vw;
    color: rgb(31, 30, 30);
 }
 
 .footeri{
    display: inline-flex;
    position: relative;
-   transform: translateX(223%);
+   transform: translateX(60vw);
+   cursor: pointer;
 }
 footer i {
-   padding-left: 3rem;
+   padding-left: 3.5vw;
    color: rgb(31, 30, 30);
+   cursor: pointer;
    }
 
 
