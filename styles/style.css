@@ -1,7 +1,7 @@
-
 *{
    margin: 0;
    padding: 0;
+   
 }
 
 body {
@@ -38,7 +38,7 @@ header {
    position: fixed;
    top: 0;
    height: 10vh;
-   width: 100%;
+   width: 100vw;
    line-height: 60px;
 }
 
@@ -73,6 +73,7 @@ label  {
 }
 
 .barra li a {
+   font-size: 1rem;
    display: block;
    text-decoration: none;
    font-family: 'IBM Plex Mono', monospace;
@@ -90,12 +91,11 @@ label  {
 .corte {
    position: absolute;
    top: 60vh;
-   padding: 10%;
-   width: 25rem;
-   height: 6rem;
-   border-top: 35rem solid transparent;
-   border-bottom:45rem solid transparent;
-   border-left: 85rem solid rgba(136,216,176);
+   width: 0.1vw;
+   height: 70vh;
+   border-left: 99vw solid rgba(136,216,176);
+   border-top: 45vh solid transparent;
+   border-bottom:45vh solid transparent;
    z-index: -1;
  }
 /* Primer sección */
@@ -106,28 +106,30 @@ label  {
 h1 {
    font-family:'IBM Plex Mono', monospace;
    margin:0;
-   font-size: 3.8rem;
+   font-size: 3rem;
    color: rgb(75, 73, 73);
    font-weight: bolder;
 }
 .first p {
    padding-top: 1rem;
-   font-size: 1.5rem;
+   padding-bottom: 2rem ;
+   font-size: 1.1rem;
    color:  rgb(82, 79, 79);
 }
 
 .ctafirst {
    width: 30%;
-   background-image: linear-gradient(70deg, rgb(241, 30, 65), rgba(248, 76, 104), rgb(233, 91, 209), rgba(182, 61, 238));
+   background-image: linear-gradient(70deg, rgb(241, 30, 65), rgba(248, 76, 104), rgb(233, 91, 209), rgb(162, 118, 233));
    cursor: pointer;
    margin-bottom: 8rem;
    display: flex;
    position: absolute;
    transform: translateY(2rem);
    Flex-direction: column-reverse;
-   color: rgb(36, 35, 35);
+   color: rgb(48, 41, 41);
    font-family:'IBM Plex Mono', monospace;
    font-weight: bolder;
+   font-size: 1.1rem;
    text-align: center;
    line-height: 3rem;
    text-decoration: none;
@@ -143,7 +145,7 @@ h1 {
    padding-top: 19rem;
    color: rgb(75, 73, 73);
    font-weight: bolder;
-   font-size: 3rem;
+   font-size: 2.5rem;
    font-family:'IBM Plex Mono', monospace;
 }
 .second {
@@ -163,22 +165,22 @@ h1 {
    width: 100%;
 }
  .nosotros p {
+   position: absolute;
    margin: 0;
    width: 22rem;
    display: flex;
-   position: relative;
    transform: translate(23vw,-55vh);
    color: rgb(82, 79, 79); 
 }
 
 .nosotros h2 {
+   position: absolute;
    font-family:'IBM Plex Mono', monospace;
    width: 25rem;
    height: 5rem;
    font-weight: bolder;
    font-size: 2.5rem;
    display: flex;
-   position: relative;
    transform: translate(23vw,-52vh);  
    color: rgb(75, 73, 73);
    }
@@ -211,7 +213,7 @@ figcaption {
 
 .topicos {
    height: 10%;
-   margin: 0 0 0 5vw;
+   margin: 0 0 -18vh 5vw;
    display: block;
    transform: translateY(-36vh);
 }
@@ -278,23 +280,35 @@ footer i {
    color: rgb(31, 30, 30);
    cursor: pointer;
    }
+@media (max-width: 800px) {
+      
+   body {
+      width: 100%;
+      margin: 0;
 
-
-@media (max-width: 768px) {
-   * {
-      align-content: center;
+   }
+   .corte {
+      position: absolute;
+      top: 60vh;
+      width: 0.01vh;
+      height: 70vh;
+      border-left: 26rem solid rgba(136,216,176);
+      border-top: 45rem solid transparent;
+      border-bottom:45rem solid transparent;
+      z-index: -1;
    }
 /* menu */
    header {
       z-index: 2;
       position: fixed;
    }
+
    .barra {
       display: none;
       flex-direction: column;
       padding-top: 3vh ;
       height: 45vh;
-      width: 50vw;
+      width: 40vw;
       background: rgba(253, 253, 253, 0.959);      
    }
    .barra li {
@@ -310,6 +324,9 @@ footer i {
    .cierra {
       display: none;
    }
+   label {
+      width: -20%;
+   }
 
    .toggle {
       display: block;
@@ -319,6 +336,7 @@ footer i {
    #toggle:checked + .barra {
       display: block;      
    }
+
    /* primera seccion */
    .first {
       margin-left: 4rem;
@@ -326,7 +344,7 @@ footer i {
       height: 100%;
    }
    .first h1 {
-     margin-bottom: 1.2rem;
+      margin-bottom: 1.2rem;
       font-size: 2.8rem;
    }
    
@@ -373,7 +391,7 @@ footer i {
       display: flex;
       position: absolute;
       justify-content: center;
-      transform: translateY(56vh);  
+      transform: translateY(60vh);  
    }
    .nosotros p {
       margin: 0;
@@ -381,11 +399,11 @@ footer i {
       display: flex;
       position: absolute;
       justify-content: center;
-      transform: translateY(80vh);
+      transform: translateY(86vh);
    }
    /* cuarta seccion */
    .entrevistas {
-      width: 200%;
+      width: 20%;
       height: 60%;
       margin-top:120vh;
       margin-left: 16vw;
@@ -396,7 +414,7 @@ footer i {
    }
 
    figcaption {
-      width: 60%;
+      width: 30%;
       position: absolute;
       line-height: 1;
       transform: translate(-5vw,-19vh);
@@ -425,4 +443,17 @@ footer i {
       padding-top: 2vh;
       transform: translateX(-11vw);
    }
+
+   footer {
+      width: 72%;
    }
+
+   .footer {
+      font-size: .6rem;
+   }
+   .footeri{
+      position: relative;
+      transform: translateX(3vw);
+   }
+}
+
