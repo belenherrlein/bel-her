@@ -28,6 +28,7 @@ header {
    z-index: 1;
    cursor: pointer;
    color:  rgb(109, 110, 110);
+   line-height: 5px;
 }
 
 .container {
@@ -38,8 +39,10 @@ header {
    position: fixed;
    top: 0;
    height: 10vh;
-   width: 100vw;
+   width: 116vw;
    line-height: 60px;
+
+
 }
 
 label  {
@@ -169,7 +172,7 @@ h1 {
    margin: 0;
    width: 22rem;
    display: flex;
-   transform: translate(23vw,-55vh);
+   transform: translate(23vw,-42vh);
    color: rgb(82, 79, 79); 
 }
 
@@ -191,33 +194,33 @@ h1 {
 /* cuarta etapa imagenes */
 
 .entrevistas {
-   margin: 0;
-   height: 30%;
+   margin:12% 0 12% 2%;
+   height: 50%;
    display: block;
    position: relative;
-   transform: translate(0.5vw,-45vh);
+   transform: translateY(-5vh);
    line-height: 0;
    font-size: 0;
 }
-figcaption {
+.figcaption {
    width: 100%;
    height: 30%;
    font-weight: bolder;
    font-size: 2.5rem;
    font-family:'IBM Plex Mono', monospace;
-   position: relative;
+   position: absolute;
    transform: translate(8vw,-7vh);  
    color:rgb(75, 73, 73);
    }
 /* Seccion alguno de nuestros temas */
 
 .topicos {
-   height: 10%;
-   margin: 0 0 -18vh 5vw;
+   height: 100%;
+   margin: 8% 0 1vh 5vw;
    display: block;
-   transform: translateY(-36vh);
+   transform: translateY(-20vh);
 }
-.topicos h2 {
+.topicos h2 { 
    font-family:'IBM Plex Mono', monospace;
    width: 100%;
    height: 100%;
@@ -301,19 +304,25 @@ footer i {
    header {
       z-index: 2;
       position: fixed;
-   }
+      }
 
    .barra {
       display: none;
       flex-direction: column;
-      padding-top: 3vh ;
-      height: 45vh;
-      width: 40vw;
-      background: rgba(253, 253, 253, 0.959);      
+      padding-top: 6vh ;
+      height: 42vh;
+      width: 50vw;
+      background: rgba(253, 253, 253, 0.959);  
+      transform: translateX(-20vw);    
    }
    .barra li {
       padding: 4%;
-      margin-left: 7rem;
+      margin-left: 6.5vw;
+   }
+   .barra li a:hover {
+      transition: 1s;
+      box-sizing: content-box;
+      color: rgba(247, 54, 47, 0.87);
    }
    
    .menu {
@@ -325,7 +334,7 @@ footer i {
       display: none;
    }
    label {
-      width: -20%;
+      padding-right: 18vw;
    }
 
    .toggle {
@@ -391,7 +400,7 @@ footer i {
       display: flex;
       position: absolute;
       justify-content: center;
-      transform: translateY(60vh);  
+      transform: translateY(65vh);  
    }
    .nosotros p {
       margin: 0;
@@ -399,32 +408,32 @@ footer i {
       display: flex;
       position: absolute;
       justify-content: center;
-      transform: translateY(86vh);
+      transform: translateY(92vh);
    }
    /* cuarta seccion */
    .entrevistas {
-      width: 20%;
+      width: 10%;
       height: 60%;
-      margin-top:120vh;
-      margin-left: 16vw;
-      display: flex;
+      margin-top:90vh;
+      display: block;
       position: relative;
-      flex-direction: column;
-
+      line-height: 0;
+      font-size: 0;
    }
 
-   figcaption {
+   .figcaption {
       width: 30%;
       position: absolute;
       line-height: 1;
-      transform: translate(-5vw,-19vh);
+      transform: translate(10vw,-20vh);
+      z-index: 2;
    }
    /* ultimo segmento */
 
    .topicos {
       height: 100%;
-      margin: 0 0 15vh 19vw;
-      display: flex;
+      margin: 23vh 0 35vh 19vw;
+      display: block;
       flex-direction: column;
    }
 
@@ -433,19 +442,20 @@ footer i {
    }
 
    .topicos ul {
-      margin-top: 18vh; 
+      margin-top: 21vh; 
       flex-direction: column;
    }
    .topicos ul li {
       padding: 3.5rem;
    }
    .iconi {
-      padding-top: 2vh;
+      padding-top: 1vh;
       transform: translateX(-11vw);
    }
+/* footer */
 
    footer {
-      width: 72%;
+      width: 100%;
    }
 
    .footer {
@@ -453,7 +463,7 @@ footer i {
    }
    .footeri{
       position: relative;
-      transform: translateX(3vw);
+      transform: translateX(30vw);
    }
 }
 
